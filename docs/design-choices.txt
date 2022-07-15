@@ -1,0 +1,9 @@
+In our implementation of the Deadwood game we applied many of the design concepts we learned about in class. For example, we used the Singleton design pattern in our Board class so that only on instance of the Board can be created. We used this design pattern because a game of Deadwood should only ever be played on a single Board, and users of this implementation of Deadwood should not be allowed to create multiple Board objects.
+
+In addition, we also applied several OOP concepts throughout our game such as encapsulation and polymorphism. For example, we made all of our class fields private in the name of encapsulation. We also used overloading in the Set class to create two methods to wrap a scene with one of the methods being used to the scenario where bonus dice are rolled and a payout is distributed to the corresponding players.
+
+We also kept cohesion in mind while designing our Deadwood implementation and tried to avoid coincidental cohesion at all costs. We tried our best to ensure all of our classes utilize functional cohesion in that each method in a class works together to perform sub-tasks of the overall class goal. Additionally we have included sequential cohesion in our Player class with our playerTurn() method. For example, when the player inputs where they would like to move their input is passed into the move() function, to see if the user entered a valid location to move to. Another example of sequential cohesion is where the player enters a role they would like to take and their input is passed to the takeRole() method which ensures there is a valid role for the player to take.
+
+Finally, we tried to avoid tight coupling with our class design as much as we could by using data coupling and provding lots of getters and setters so that classes could not manipulate the data or fields of another class directly.
+
+
